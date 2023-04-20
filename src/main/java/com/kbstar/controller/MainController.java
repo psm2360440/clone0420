@@ -18,4 +18,10 @@ public class MainController {
         return "index";
     }
 
+    @RequestMapping("/tables")
+    public String tables(Model model){
+        model.addAttribute("contents", "tables");
+        return "index";
+    }
+
 }
